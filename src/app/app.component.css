@@ -1,0 +1,25 @@
+h1{
+  display: inline-block;
+}
+.search_bar{
+  outline: none;
+  border: 0px;
+  padding: 8px;
+}
+.header-btn {
+  margin:auto;
+  float: right;
+}
+.header-btn:hover {
+  text-underline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.card{
+  padding-top:20px;
+}
+
+.navbar {
+border-bottom: outset 1PX;
+  border-top: outset 1px;
+}

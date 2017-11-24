@@ -1,0 +1,192 @@
+<!-- ************Latest posts***********-->
+<h2>Latest</h2>
+<hr style="height: 2px; width: 40vw;float: left">
+
+<div class="row" style="clear: left">
+  <ng-container *ngFor="let posts of data">
+    <ng-container *ngFor="let post of posts.techPosts">
+      <div class="col-md-6" *ngIf="post.latest==true">
+        <!--card-->
+        <div class="card" style="width: 25rem;height: 15rem;">
+          <img class="card-img-top" src={{post.imageUrl}} alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">{{post.title}}</h4>
+            <p class="card-text">{{post.desc}}</p>
+          </div>
+
+          <div class="card-body">
+            <a href="#" class="card-link" [routerLink]="['/user/blog/',post.id]">Read More...</a>
+            <a href="#">
+              <i class="fa fa-heart-o" aria-hidden="true" style="float: right; color: #F06292"></i>
+            </a>
+            <p class="card-text">
+              <small class="text-muted">{{post.date}}</small>
+            </p>
+            <footer class="blockquote-footer" style="float: right">
+              <small>
+                By : <cite title="Source Title">{{post.author}}</cite>
+              </small>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngFor="let post of posts.medPosts">
+      <div class="col-md-6" *ngIf="post.latest==true">
+        <!--card-->
+        <div class="card" style="width: 25rem">
+          <img class="card-img-top" src={{post.imageUrl}} alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">{{post.title}}</h4>
+            <p class="card-text">{{post.desc}}</p>
+          </div>
+
+          <div class="card-body">
+            <a href="#" class="card-link" [routerLink]="['/user/blog/',post.id]">Read More...</a>
+            <a href="#">
+              <i class="fa fa-heart-o" aria-hidden="true" style="float: right; color: #F06292"></i>
+            </a>
+            <p class="card-text">
+              <small class="text-muted">{{post.date}} ...</small>
+            </p>
+            <footer class="blockquote-footer" style="float: right">
+              <small>
+                By : <cite title="Source Title">{{post.author}}</cite>
+              </small>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngFor="let post of posts.managementPosts">
+      <div class="col-md-6" *ngIf="post.latest==true">
+        <!--card-->
+        <div class="card" style="width: 25rem">
+          <img class="card-img-top" src={{post.imageUrl}} alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">{{post.title}}</h4>
+            <p class="card-text">{{post.desc}}</p>
+          </div>
+
+          <div class="card-body">
+            <a href="#" class="card-link" [routerLink]="['/user/blog/',post.id]">Read More...</a>
+            <a href="#">
+              <i class="fa fa-heart-o" aria-hidden="true" style="float: right; color: #F06292"></i>
+            </a>
+            <p class="card-text">
+              <small class="text-muted">{{post.date}}</small>
+            </p>
+            <footer class="blockquote-footer" style="float: right">
+              <small>
+                By : <cite title="Source Title">{{post.author}}</cite>
+              </small>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </ng-container>
+</div>
+
+<!--
+  <!-- ************Technical posts***********--
+  <h2>Technical</h2>
+  <hr style="height: 2px; width: 40vw;float: left">
+
+  <div class="row" style="clear: left">
+    <div class="col-md-6" *ngFor="let post of posts.techPosts">
+      <!--card--
+      <div class="card" style="width: 25rem">
+        <img class="card-img-top" src={{post.imageUrl}} alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">{{post.title}}</h4>
+          <p class="card-text">{{post.desc}}</p>
+        </div>
+
+        <div class="card-body">
+          <a href="#" class="card-link">Read More...</a>
+          <a href="#">
+            <i class="fa fa-heart-o" aria-hidden="true" style="float: right; color: #F06292"></i>
+          </a>
+          <p class="card-text">
+            <small class="text-muted">{{post.date}} ...</small>
+          </p>
+          <footer class="blockquote-footer" style="float: right">
+            <small>
+              By : <cite title="Source Title">{{post.author}}</cite>
+            </small>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ************Medical posts***********--
+  <h2>Medical</h2>
+  <hr style="height: 2px; width: 40vw;float: left">
+
+  <div class="row" style="clear: left">
+    <div class="col-md-6" *ngFor="let post of posts.medPosts">
+      <!--card--
+      <div class="card" style="width: 25rem">
+        <img class="card-img-top" src={{post.imageUrl}} alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">{{post.title}}</h4>
+          <p class="card-text">{{post.desc}}</p>
+        </div>
+
+        <div class="card-body">
+          <a href="#" class="card-link">Read More...</a>
+          <a href="#">
+            <i class="fa fa-heart-o" aria-hidden="true" style="float: right; color: #F06292"></i>
+          </a>
+          <p class="card-text">
+            <small class="text-muted">{{post.date}} ...</small>
+          </p>
+          <footer class="blockquote-footer" style="float: right">
+            <small>
+              By : <cite title="Source Title">{{post.author}}</cite>
+            </small>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ************Management posts***********--
+  <h2>Management</h2>
+  <hr style="height: 2px; width: 40vw;float: left">
+
+  <div class="row" style="clear: left">
+    <div class="col-md-6" *ngFor="let post of posts.managementPosts">
+      <!--card--
+      <div class="card" style="width: 25rem">
+        <img class="card-img-top" src={{post.imageUrl}} alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">{{post.title}}</h4>
+          <p class="card-text">{{post.desc}}</p>
+        </div>
+
+        <div class="card-body">
+          <a href="#" class="card-link">Read More...</a>
+          <a href="#">
+            <i class="fa fa-heart-o" aria-hidden="true" style="float: right; color: #F06292"></i>
+          </a>
+          <p class="card-text">
+            <small class="text-muted">{{post.date}} ...</small>
+          </p>
+          <footer class="blockquote-footer" style="float: right">
+            <small>
+              By : <cite title="Source Title">{{post.author}}</cite>
+            </small>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+-->

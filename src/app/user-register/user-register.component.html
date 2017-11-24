@@ -1,0 +1,40 @@
+
+<div class="card bg-light mb-3" style="max-width: 20rem;">
+  <div class="card-header">Sign up</div>
+  <div class="card-body">
+    <div class="card-text">
+      <form [formGroup]="myForm" (ngSubmit)="addUser(myForm)">
+        <div class="form-group row" [ngClass]="{'has-error':!myForm.controls['name'].valid && myForm.controls['name'].touched}">
+          <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="inputName" placeholder="Name" [formControl]="myForm.controls['name']">
+            <div *ngIf="myForm.controls['name'].hasError('required') && myForm.controls['name'].touched" class="alert alert-danger">You must include a name.</div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-8">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" [formControl]="myForm.controls['email']">
+            <div *ngIf="myForm.controls['email'].hasError('required') && myForm.controls['email'].touched" class="alert alert-danger">You must include a valid Email.</div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-8">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password" [formControl]="myForm.controls['pass1']">
+            <div *ngIf="myForm.controls['pass1'].hasError('required') && myForm.controls['pass1'].touched" class="alert alert-danger">You must include a password.</div>
+            <div *ngIf="myForm.controls['pass1'].hasError('minlength') && myForm.controls['pass1'].touched" class="alert alert-danger">Your last name must be at least 5 characters long.</div>
+            <div *ngIf="myForm.controls['pass1'].hasError('maxlength') && myForm.controls['pass1'].touched" class="alert alert-danger">Your last name cannot exceed 10 characters.</div>
+
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-8">
+            <button type="submit" class="btn btn-primary" [disabled]="!myForm.valid">Sign up</button>
+            <span  *ngIf="registered" class="alert alert-success"><i class="fa fa-check"></i> Registered</span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
