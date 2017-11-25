@@ -39,7 +39,12 @@ export class AuthenticationService {
         }
         return user;
       });
+  }
 
+  updateFavourites(data) {
+    const fullURL = BASE_URL + `${data.id}`
+    return this._http.put(fullURL, data)
+      .map(res => res.json());
   }
 
   logout() {

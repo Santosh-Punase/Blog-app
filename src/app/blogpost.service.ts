@@ -21,4 +21,5 @@ export class BlogPostService {
     return this._http.post(BASE_URL, data)
       .map(res => res.json());
   }
+  
 }
