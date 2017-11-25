@@ -1,134 +1,184 @@
 {
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postTag": "management",
-      "postId": 1
-    }
-  ],
   "profiles": [
     {
       "name": "santosh",
       "email": "santosh@gmail.com",
       "pass1": "santosh",
-      "id": "_SjVD_c"
-    },
-    {
-      "name": "manish",
-      "email": "manish@gmail.com",
-      "pass1": "manish",
-      "id": "p_DgKby"
-    },
-    {
-      "name": "chinki",
-      "email": "chinki@gmail.com",
-      "pass1": "chinki",
-      "id": "CdS6jNC"
+      "id": "_SjVD_c",
+      "favorites": []
     }
   ],
   "posts": [
     {
-      "managementPosts": [
-        {
-          "id": 1,
-          "title": "Microsoft and McDonalds Change Core Tenets. Why People Cosplay. The Brief for 10.28.17",
-          "author": "Chris Brogan",
-          "desc": "The goal of these posts is that there are trends and ideas here that might impact your business now or soon.",
-          "post": "You know I love chatbots, especially backed by artificial intelligence, as a trend. Well,I just signed up to get a chatbot that will try to learn how to be like me and emulate my mannerisms, etc. Just for fun, but who knows? This kind of modeling might actually lead to how we scale our ability to connect with others.",
-          "imageUrl": "http://chrisbrogan.com/wp-content/uploads/2017/10/szechuan-768x512.jpg",
-          "latest": false,
-          "date": "October 28 2017"
-        },
-        {
-          "id": 2,
-          "title": "TWO HOURS TO COURAGE",
-          "author": "Dan Rockwell",
-          "desc": "Fear talks you out of exceptional and into mediocre.Losing the conversation with fear means: problems persist, teams reach low, and you’re less of a leader than you could be....",
-          "post": "The only way to overcome fear is to scare yourself.<p>Meetings suck, but you’re afraid to bring it up.</p><p>Office culture feels cold. But it feels safe to pull up your collar and keep your head down. You rationalize that it wouldn’t matter anyway.</p><p>What’s the bravest thing you can do today to energize meetings or warm office culture?</p><i>Tip: Aim low. Don’t aim for radical transformation in a day.Tomorrow aim a little less low.</i>",
-          "imageUrl": "https://leadershipfreak.files.wordpress.com/2017/11/cowards-dream-dreams-the-courageous-take-action.jpg?w=768&h=486",
-          "latest": true,
-          "date": "November 9 2017"
-        },
-        {
-          "id": 3,
-          "title": "Why Crazy Works in the Office",
-          "author": "Stanley Bing",
-          "desc": "People are mystified by the rise of the divisive candidate who has dominated the news of this election cycle.",
-          "post": "He is, in short, your crazy boss. With all the rational, kind, and obviously more mentally balanced people around who could do the job, it’s natural to wonder how somebody so spectacularly bent got to such a position of power. But his gorgeous bouquet of pathologies is far from a liability in business. Rather, it’s a tremendous asset. Whether or not this person should be placed in charge of a far more serious operation, however, is another issue entirely. So let’s get him in focus.",
-          "imageUrl": "https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Ffortunedotcom.files.wordpress.com%2F2016%2F08%2Fout09_a.jpg&w=800&q=85",
-          "latest": false,
-          "date": "August 29 2017"
-        }
-      ]
+      "id": 1,
+      "title": "Microsoft and McDonalds Change Core Tenets. Why People Cosplay. The Brief for 10.28.17",
+      "author": "Chris Brogan",
+      "desc": "The goal of these posts is that there are trends and ideas here that might impact your business now or soon.",
+      "post": "You know I love chatbots, especially backed by artificial intelligence, as a trend. Well,I just signed up to get a chatbot that will try to learn how to be like me and emulate my mannerisms, etc. Just for fun, but who knows? This kind of modeling might actually lead to how we scale our ability to connect with others.",
+      "imageUrl": "http://chrisbrogan.com/wp-content/uploads/2017/10/szechuan-768x512.jpg",
+      "latest": false,
+      "date": "October 28 2017",
+      "category": "Management"
     },
     {
-      "medPosts": [
-        {
-          "id": 1,
-          "title": "19 Important Causes of Fatigue – Tiredness and Chronic Fatigue Explained",
-          "author": "Axel F",
-          "desc": "“Fatigue is here, in my body, in my legs and eyes. That is what gets you in the end. Faith is only a word, embroidered.” ",
-          "post": "Fatigue or tiredness is a common medical complaint that may seriously affect people’s quality of life. However, despite many possible underlying causes, a specific medical disorder is seldom revealed. On the other hand, mood and anxiety disorders are commonly associated with fatigue.<p>Fatigue is regarded as a nonspecific symptom as it is not typically associated with a particular disease. It is one of the most common complaints reported to medical care providers.</p>",
-          "imageUrl": "https://www.docsopinion.com/wp-content/uploads/2017/11/70824415_m-e1510172180360.jpg",
-          "latest": true,
-          "date": "November 8 2017"
-        },
-        {
-          "id": 2,
-          "title": "Testosterone Levels, Low Testosterone Symptoms, and Testosterone Replacement Therapy",
-          "author": "Axel F",
-          "desc": "Most men want to live to a ripe old age. But this could come at a price. We may have to depart with masculinity and vigor. Manliness may become a myth.",
-          "post": "Could testosterone be the issue? We all know that testosterone is what makes men, men. The deep voice, the large muscles. It’s all about testosterone, isn’t it?<p>And, isn’t it true that testosterone levels start to fall in men by about 1% a year, beginning in the 40s?</p><p>Lately, the condition of “low T” among older men has been highlighted as an easily treated phenomenon. Direct-to-customer advertising (DTCA) has been guilty of encouraging the use of testosterone treatment for symptoms such as decreased energy and lack of sexual interest which have not always been proven to be caused by declining testosterone levels (4).</p>",
-          "imageUrl": "https://www.docsopinion.com/wp-content/uploads/2017/10/41657933_m-e1509395795136.jpg",
-          "latest": false,
-          "date": "October 31 2017"
-        },
-        {
-          "id": 3,
-          "title": "In-Flight Medical Emergencies – The Role of the Flight Crew and the Medical Professional",
-          "author": "Axel F",
-          "desc": "In-flight medical emergencies on commercial flights occur every day. In 2013, it was estimated that 44.000 such events occurred worldwide every year",
-          "post": "<p>The steadily increasing number of air travelers, the aging of the population, and the increasing number of air travelers with acute or chronic illnesses will undoubtedly increase the number of in-flight medical events in the future</p><p>However, understanding the essential nature of in-flight medical emergencies and some critical aspects of the aircraft environment will make us better prepared. Thereupon, this article is intended to answer important questions about in flight-medical emergencies and how they should be treated.</p>",
-          "imageUrl": "https://www.docsopinion.com/wp-content/uploads/2017/10/32506875_m-e1508765839145.jpg",
-          "latest": false,
-          "date": "October 23 2017"
-        }
-      ]
+      "id": 2,
+      "title": "TWO HOURS TO COURAGE",
+      "author": "Dan Rockwell",
+      "desc": "Fear talks you out of exceptional and into mediocre.Losing the conversation with fear means: problems persist, teams reach low, and you’re less of a leader than you could be....",
+      "post": "The only way to overcome fear is to scare yourself.<p>Meetings suck, but you’re afraid to bring it up.</p><p>Office culture feels cold. But it feels safe to pull up your collar and keep your head down. You rationalize that it wouldn’t matter anyway.</p><p>What’s the bravest thing you can do today to energize meetings or warm office culture?</p><i>Tip: Aim low. Don’t aim for radical transformation in a day.Tomorrow aim a little less low.</i>",
+      "imageUrl": "https://leadershipfreak.files.wordpress.com/2017/11/cowards-dream-dreams-the-courageous-take-action.jpg?w=768&h=486",
+      "latest": true,
+      "date": "November 9 2017",
+      "category": "Management"
     },
     {
-      "techPosts": [
-        {
-          "id": 1,
-          "title": "Ford tests exoskeleton to ease strain on factory workers",
-          "author": "David Lumb",
-          "desc": "Ford tests exoskeleton to ease strain on factory workers ",
-          "post": "Companies are starting to propose functioning exoskeletons for real applications, from soldier support to helping paraplegic patients walk. But they could also be customized to help everyday workers with their harder tasks, as Lowe's lift-easing prototype demonstrated. Ford is taking a different tack by investing in the EksoVest, a new exoskeleton that supports factory employees' upper bodies to ease strain when lifting and performing overhead tasks.<p>Certain Ford employees do these tasks up to 4,600 times per day and up to a million times per year, the automaker noted in a press release. The non-powered EksoVest, designed by Ekso Bionics in partnership with Ford, helps lift five to fifteen pounds, easing the strain on users' upper bodies and preventing some fatigue. That assistance could help prevent workplace accidents resulting from tired muscles and minds. The EksoVest fits employees from 5-feet to 6-feet 4-inches tall and is designed for anyone in load-bearing work, from factories to construction sites to distribution centers.</p>",
-          "imageUrl": "https://o.aolcdn.com/images/dims?quality=100&image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F34f7c25797513432474fb910719d773a%2F205848269%2FFordEksoVest.jpeg&client=cbc79c14efcebee57402&signature=81118f5594f85efc9318df13873b7547b38ea6f3",
-          "latest": true,
-          "date": "November 10 2017"
-        },
-        {
-          "id": 2,
-          "title": "Colorado voters really want city-run broadband service",
-          "author": "Mallory Locklear",
-          "desc": "Nearly half of Colorado counties have voted in support of municipal internet.",
-          "post": "Colorado state law requires municipalities to hold public referendums before they can provide services like broadband internet access. And as of Tuesday's elections, Ars Technica reports, 31 of the state's 64 counties have opted to allow their local governments to build broadband networks. Voters in Fort Collins, Colorado joined those supporting municipal broadband, approving a ballot measure giving its city council permission to establish a city-run network. The measure passed despite an anti-municipal broadband group that spent nearly half of a million dollars campaigning against it. The group was funded by the Colorado Cable Telecommunications Association and the city's chamber of commerce, which Comcast and CenturyLink are members of. And though it doesn't mean each of them will actually build their own broadband networks, over 100 cities, towns and counties in Colorado have now passed ballot measures allowing their towns to do so, Motherboard reports.",
-          "imageUrl": "https://o.aolcdn.com/images/dims?quality=100&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D3865%252C2576%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C1066%26image_uri%3Dhttp%253A%252F%252Fo.aolcdn.com%252Fhss%252Fstorage%252Fmidas%252Fe5bd021144c7e5249020cc64bbf54055%252F204084809%252F538475150.jpg%26client%3Da1acac3e1b3290917d92%26signature%3D0483f88a083c57b2bab14d89d8098d4effe1fd2e&client=cbc79c14efcebee57402&signature=d68ee209342a0e592e7bd950b4109971270a2d6f",
-          "latest": true,
-          "date": "November 9 2017"
-        },
-        {
-          "id": 3,
-          "title": "Sharp's $77,000 camcorder shows that 8K is coming soon",
-          "author": "Steve Dent",
-          "desc": "Your 4K TV isn't obsolete ... yet.",
-          "post": "<p>Sharp has unveiled an 8K camcorder that is undoubtedly aimed at the upcoming 2020 Tokyo Olympics, but will be equally at home on a film set. Looking like an old-school ENG news camera, the 8C-B60A captures 8K, 10-bit 60fps video onto a large, Super 35mm sensor that's around the same size as the one on Red's Helium Weapon 8K. The custom 2TB SSD pack, developed in collaboration with Astrodesign, can hold about 40 minutes of 8K video.",
-          "imageUrl": "https://o.aolcdn.com/images/dims?quality=100&image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F86efe7f7617ddfcafd6783286aca0b77%2F205847510%2Fsharp-8k-camcorder-2017-11-09-01.jpg&client=cbc79c14efcebee57402&signature=22d6da5e1c3457a3741755d39bf874e465e9bfdd",
-          "latest": false,
-          "date": "August 6 2017"
-        }
-      ]
+      "id": 3,
+      "title": "Why Crazy Works in the Office",
+      "author": "Stanley Bing",
+      "desc": "People are mystified by the rise of the divisive candidate who has dominated the news of this election cycle.",
+      "post": "He is, in short, your crazy boss. With all the rational, kind, and obviously more mentally balanced people around who could do the job, it’s natural to wonder how somebody so spectacularly bent got to such a position of power. But his gorgeous bouquet of pathologies is far from a liability in business. Rather, it’s a tremendous asset. Whether or not this person should be placed in charge of a far more serious operation, however, is another issue entirely. So let’s get him in focus.",
+      "imageUrl": "https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Ffortunedotcom.files.wordpress.com%2F2016%2F08%2Fout09_a.jpg&w=800&q=85",
+      "latest": false,
+      "date": "August 29 2017",
+      "category": "Management"
+    },
+    {
+      "id": 4,
+      "title": "19 Important Causes of Fatigue – Tiredness and Chronic Fatigue Explained",
+      "author": "Axel F",
+      "desc": "“Fatigue is here, in my body, in my legs and eyes. That is what gets you in the end. Faith is only a word, embroidered.” ",
+      "post": "Fatigue or tiredness is a common medical complaint that may seriously affect people’s quality of life. However, despite many possible underlying causes, a specific medical disorder is seldom revealed. On the other hand, mood and anxiety disorders are commonly associated with fatigue.<p>Fatigue is regarded as a nonspecific symptom as it is not typically associated with a particular disease. It is one of the most common complaints reported to medical care providers.</p>",
+      "imageUrl": "https://www.docsopinion.com/wp-content/uploads/2017/11/70824415_m-e1510172180360.jpg",
+      "latest": true,
+      "date": "November 8 2017",
+      "category": "Medical"
+    },
+    {
+      "id": 5,
+      "title": "Testosterone Levels, Low Testosterone Symptoms, and Testosterone Replacement Therapy",
+      "author": "Axel F",
+      "desc": "Most men want to live to a ripe old age. But this could come at a price. We may have to depart with masculinity and vigor. Manliness may become a myth.",
+      "post": "Could testosterone be the issue? We all know that testosterone is what makes men, men. The deep voice, the large muscles. It’s all about testosterone, isn’t it?<p>And, isn’t it true that testosterone levels start to fall in men by about 1% a year, beginning in the 40s?</p><p>Lately, the condition of “low T” among older men has been highlighted as an easily treated phenomenon. Direct-to-customer advertising (DTCA) has been guilty of encouraging the use of testosterone treatment for symptoms such as decreased energy and lack of sexual interest which have not always been proven to be caused by declining testosterone levels (4).</p>",
+      "imageUrl": "https://www.docsopinion.com/wp-content/uploads/2017/10/41657933_m-e1509395795136.jpg",
+      "latest": false,
+      "date": "October 31 2017",
+      "category": "Medical"
+    },
+    {
+      "id": 6,
+      "title": "In-Flight Medical Emergencies – The Role of the Flight Crew and the Medical Professional",
+      "author": "Axel F",
+      "desc": "In-flight medical emergencies on commercial flights occur every day. In 2013, it was estimated that 44.000 such events occurred worldwide every year",
+      "post": "<p>The steadily increasing number of air travelers, the aging of the population, and the increasing number of air travelers with acute or chronic illnesses will undoubtedly increase the number of in-flight medical events in the future</p><p>However, understanding the essential nature of in-flight medical emergencies and some critical aspects of the aircraft environment will make us better prepared. Thereupon, this article is intended to answer important questions about in flight-medical emergencies and how they should be treated.</p>",
+      "imageUrl": "https://www.docsopinion.com/wp-content/uploads/2017/10/32506875_m-e1508765839145.jpg",
+      "latest": false,
+      "date": "October 23 2017",
+      "category": "Medical"
+    },
+    {
+      "id": 7,
+      "title": "Ford tests exoskeleton to ease strain on factory workers",
+      "author": "David Lumb",
+      "desc": "Ford tests exoskeleton to ease strain on factory workers ",
+      "post": "Companies are starting to propose functioning exoskeletons for real applications, from soldier support to helping paraplegic patients walk. But they could also be customized to help everyday workers with their harder tasks, as Lowe's lift-easing prototype demonstrated. Ford is taking a different tack by investing in the EksoVest, a new exoskeleton that supports factory employees' upper bodies to ease strain when lifting and performing overhead tasks.<p>Certain Ford employees do these tasks up to 4,600 times per day and up to a million times per year, the automaker noted in a press release. The non-powered EksoVest, designed by Ekso Bionics in partnership with Ford, helps lift five to fifteen pounds, easing the strain on users' upper bodies and preventing some fatigue. That assistance could help prevent workplace accidents resulting from tired muscles and minds. The EksoVest fits employees from 5-feet to 6-feet 4-inches tall and is designed for anyone in load-bearing work, from factories to construction sites to distribution centers.</p>",
+      "imageUrl": "https://o.aolcdn.com/images/dims?quality=100&image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F34f7c25797513432474fb910719d773a%2F205848269%2FFordEksoVest.jpeg&client=cbc79c14efcebee57402&signature=81118f5594f85efc9318df13873b7547b38ea6f3",
+      "latest": true,
+      "date": "November 10 2017",
+      "category": "Technology"
+    },
+    {
+      "id": 8,
+      "title": "Colorado voters really want city-run broadband service",
+      "author": "Mallory Locklear",
+      "desc": "Nearly half of Colorado counties have voted in support of municipal internet.",
+      "post": "Colorado state law requires municipalities to hold public referendums before they can provide services like broadband internet access. And as of Tuesday's elections, Ars Technica reports, 31 of the state's 64 counties have opted to allow their local governments to build broadband networks. Voters in Fort Collins, Colorado joined those supporting municipal broadband, approving a ballot measure giving its city council permission to establish a city-run network. The measure passed despite an anti-municipal broadband group that spent nearly half of a million dollars campaigning against it. The group was funded by the Colorado Cable Telecommunications Association and the city's chamber of commerce, which Comcast and CenturyLink are members of. And though it doesn't mean each of them will actually build their own broadband networks, over 100 cities, towns and counties in Colorado have now passed ballot measures allowing their towns to do so, Motherboard reports.",
+      "imageUrl": "https://o.aolcdn.com/images/dims?quality=100&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D3865%252C2576%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C1066%26image_uri%3Dhttp%253A%252F%252Fo.aolcdn.com%252Fhss%252Fstorage%252Fmidas%252Fe5bd021144c7e5249020cc64bbf54055%252F204084809%252F538475150.jpg%26client%3Da1acac3e1b3290917d92%26signature%3D0483f88a083c57b2bab14d89d8098d4effe1fd2e&client=cbc79c14efcebee57402&signature=d68ee209342a0e592e7bd950b4109971270a2d6f",
+      "latest": true,
+      "date": "November 9 2017",
+      "category": "Technology"
+    },
+    {
+      "id": 9,
+      "title": "Sharp's $77,000 camcorder shows that 8K is coming soon",
+      "author": "Steve Dent",
+      "desc": "Your 4K TV isn't obsolete ... yet.",
+      "post": "<p>Sharp has unveiled an 8K camcorder that is undoubtedly aimed at the upcoming 2020 Tokyo Olympics, but will be equally at home on a film set. Looking like an old-school ENG news camera, the 8C-B60A captures 8K, 10-bit 60fps video onto a large, Super 35mm sensor that's around the same size as the one on Red's Helium Weapon 8K. The custom 2TB SSD pack, developed in collaboration with Astrodesign, can hold about 40 minutes of 8K video.",
+      "imageUrl": "https://o.aolcdn.com/images/dims?quality=100&image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F86efe7f7617ddfcafd6783286aca0b77%2F205847510%2Fsharp-8k-camcorder-2017-11-09-01.jpg&client=cbc79c14efcebee57402&signature=22d6da5e1c3457a3741755d39bf874e465e9bfdd",
+      "latest": false,
+      "date": "August 6 2017",
+      "category": "Technology"
+    },
+    {
+      "title": "A simple Blog",
+      "desc": "blog desc goes here",
+      "body": "<p>Here comes the Body Part</p><p>A well decorated Body</p>",
+      "category": "Technology",
+      "imageUrl": null,
+      "id": 10
+    },
+    {
+      "title": "wwwqeeee",
+      "desc": "fbfds",
+      "body": "<p>lnfnlfndnfmdsd</p>",
+      "category": "Technology",
+      "imageUrl": null,
+      "auther": "",
+      "id": 11
+    },
+    {
+      "title": "sanmffdf",
+      "desc": "kjdskd",
+      "body": "<p>lkndsdsv sdvnsjk</p>",
+      "category": "Technology",
+      "imageUrl": null,
+      "auther": null,
+      "date": "Sat Nov 25 2017",
+      "latest": true,
+      "id": 12
+    },
+    {
+      "title": "nfdnfddm dsm skj",
+      "desc": "kbdkbdsf",
+      "body": "<p>hffifyuffsfkdsmdd</p>",
+      "category": "Medical",
+      "imageUrl": null,
+      "auther": null,
+      "date": "Sat Nov 25 2017",
+      "latest": true,
+      "id": 13
+    },
+    {
+      "title": "mmklmvmkjvfu",
+      "desc": "efbdfndsnfjdsnf",
+      "body": "<p>fjkjfwwifnflkmf</p>",
+      "category": "Medical",
+      "imageUrl": null,
+      "auther": "\"_SjVD_c\"",
+      "date": "Sat Nov 25 2017",
+      "latest": true,
+      "id": 14
+    },
+    {
+      "title": "bdhabjdbadasb",
+      "desc": "dnmcbahbd",
+      "body": "<p>kjbbkjnm,c ,macjkadjehd</p>",
+      "category": "Management",
+      "imageUrl": null,
+      "author": "\"santosh\"",
+      "date": "Sat Nov 25 2017",
+      "latest": true,
+      "id": 15
+    },
+    {
+      "title": "lkjhgfdsa",
+      "desc": "hmkimnfgbgfbgsb",
+      "body": "<p>bhgmjmbgvfcdfdgjhgfv</p>",
+      "category": "Management",
+      "imageUrl": null,
+      "author": "santosh",
+      "date": "Sat Nov 25 2017",
+      "latest": true,
+      "id": 16
     }
   ]
 }

@@ -34,7 +34,7 @@ export class AuthenticationService {
         let userData = res.json();
         var user = userData.find((user) => user.name === username && user.pass1 === password);
         if (user) {
-          localStorage.setItem('curUser', JSON.stringify(user['id']));
+          localStorage.setItem('curUser', JSON.stringify(user));
           this.loginStatus.emit(true);
         }
         return user;

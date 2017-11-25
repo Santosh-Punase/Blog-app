@@ -3,9 +3,9 @@
   <h1>
     {{title}}!
   </h1>
-<ng-container *ngIf="!loginStatus">
+<ng-container *ngIf="loginStatus">
   <button type="button" class="btn header-btn btn-link" (click)="logout()" [routerLink]="['/home']">Logout</button>
-  <button type="button" class="btn header-btn btn-link" [routerLink]="['/addBlog']">Add Blog</button>
+  <button type="button" class="btn header-btn btn-success" [routerLink]="['/addBlog']">Add Blog</button>
 </ng-container>
   <ng-container *ngIf="!loginStatus">
     <button type="button" class="btn header-btn btn-link" [routerLink]="['/login']">Sign in</button>

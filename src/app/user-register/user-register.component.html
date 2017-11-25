@@ -3,7 +3,7 @@
   <div class="card-header">Sign up</div>
   <div class="card-body">
     <div class="card-text">
-      <form [formGroup]="myForm" (ngSubmit)="addUser(myForm)">
+      <form [formGroup]="myForm" (ngSubmit)="addUser(myForm.value)">
         <div class="form-group row" [ngClass]="{'has-error':!myForm.controls['name'].valid && myForm.controls['name'].touched}">
           <label for="inputName" class="col-sm-2 col-form-label">Name</label>
           <div class="col-sm-8">

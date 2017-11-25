@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {BlogPostService} from '../blogpost.service';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {AuthenticationService} from '../authentication.service';
+import { IUser } from './user';
 declare let $: any;
 
 @Component({
@@ -23,8 +24,14 @@ export class UserRegisterComponent implements OnInit {
   ngOnInit() {
   }
   addUser(myForm) {
-    console.log(myForm.value);
-    this.request.regUser(myForm.value).subscribe(data =>
+    console.log(myForm);
+    let user = {
+    name : myForm.name,
+    email : myForm.email,
+    pass1 : myForm.pass1,
+    favourites : []
+    }
+    this.request.regUser(user).subscribe(data =>
     console.log(data));
     this.registered = true;
     // wait 3 Seconds and hide

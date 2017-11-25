@@ -24,11 +24,7 @@ export class BlogPostComponent implements OnInit, OnDestroy{
   loadData() {
     this.request.loadBlogs()
       .subscribe( data => {
-        switch (this.category) {
-          case 'Management': { console.log('mgmt'); this.data = data[0].managementPosts; break; }
-          case 'Medical': {console.log('med'); this.data = data[1].medPosts; break; }
-          case 'Technology': {console.log('tech'); this.data = data[2].techPosts; break; }
-        }
+        this.data = data;
         console.log(this.data);
       });
   }

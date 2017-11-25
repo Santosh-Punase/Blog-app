@@ -3,10 +3,12 @@
 <hr style="height: 2px; width: 40vw;float: left">
 
 <div class="row" style="clear: left">
-      <div class="col-md-6" *ngFor="let post of data">
+    <ng-container *ngFor="let post of data">
+        <div class="col-md-6" *ngIf="post.category==category">
         <!--card-->
-        <div class="card" style="width: 25rem">
-          <img class="card-img-top" src={{post.imageUrl}} alt="Card image cap">
+       
+        <div class="card" style="width: 25rem;height: 40rem;">
+          <img class="card-img-top" src={{post.imageUrl}} alt="Card image cap" style="height:15rem">
           <div class="card-body">
             <h4 class="card-title">{{post.title}}</h4>
             <p class="card-text">{{post.desc}}</p>
@@ -27,5 +29,7 @@
             </footer>
           </div>
         </div>
+     
       </div>
+      </ng-container>
 </div>
