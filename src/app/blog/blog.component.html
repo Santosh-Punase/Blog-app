@@ -1,3 +1,27 @@
-<p>
-  blog works!
-</p>
+<div class="container " style="background-color:#F9F9F9">
+  <div class="col-sm-12 text-center">
+    <h1>{{data.title}}</h1>
+  </div>
+  <br/>
+  <div class="col-sm-12">
+    <img src={{data.imageUrl}} style="width: 100%">
+  </div>
+  <br/>
+  <div class="col-sm-12 text-justify">
+    <h5>{{data.desc}}</h5>
+  </div>
+  <br/>
+  <div class="col-sm-12 text-justify">
+      <div [innerHTML] = "data.post | safeHtml"></div>
+  </div>
+
+  <span class="card-text">
+      <small class="text-muted">{{data.date}}</small>
+    </span>
+    <footer style="float: right">
+      <small>
+        By : <cite title="Source Title">{{data.author}}</cite>
+      </small>
+    </footer>
+
+</div>

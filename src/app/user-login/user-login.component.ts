@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {AuthenticationService} from '../authentication.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -9,7 +10,7 @@ import {AuthenticationService} from '../authentication.service';
 })
 export class UserLoginComponent implements OnInit {
 
-  constructor(private request: AuthenticationService) { }
+  constructor(private request: AuthenticationService, private route: Router) { }
 
   ngOnInit() {
   }
@@ -19,5 +20,6 @@ export class UserLoginComponent implements OnInit {
     console.log(form.userName);
     console.log(form.userPass);
     this.request.login(form.userName, form.userPass).subscribe(data => console.log(data['id']));
+this.route.navigate(['/home']);
   }
 }

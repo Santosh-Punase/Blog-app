@@ -23,7 +23,7 @@ const app_routes = [
   {path: 'login', component: UserLoginComponent},
   {path: 'register', component: UserRegisterComponent},
   {path: 'addBlog', component: AddBlogComponent},
-  { path: '', component: BlogShowcaseComponent}
+  { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 @NgModule({
