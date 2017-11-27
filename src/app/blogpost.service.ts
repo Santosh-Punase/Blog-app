@@ -14,12 +14,12 @@ export class BlogPostService {
       .map(res => res.json());
   }
   loadBlog(id) {
-    return this._http.get(BASE_URL+id)
+    return this._http.get(BASE_URL + id)
       .map(res => res.json());
   }
   addBlogs(data) {
     return this._http.post(BASE_URL, data)
       .map(res => res.json());
   }
-  
+
 }

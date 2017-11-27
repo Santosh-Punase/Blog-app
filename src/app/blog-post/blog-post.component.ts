@@ -14,6 +14,7 @@ export class BlogPostComponent implements OnInit, OnDestroy{
   category: string;
   private sub: any;
   currentUser: Object;
+  loginStatus: boolean;
 
   constructor(private route: ActivatedRoute, private request: BlogPostService, private userReq: AuthenticationService) { }
 
@@ -22,8 +23,11 @@ export class BlogPostComponent implements OnInit, OnDestroy{
       this.category = param.get('category');
       console.log(this.category);
       this.loadData();
-    });
-    this.currentUser=JSON.parse(localStorage.getItem('curUser'));
+    }); 
+    this.loginStatus = this.userReq.isLoggedIn();
+    if(this.loginStatus) {
+   this.currentUser=JSON.parse(localStorage.getItem('curUser'));
+    }
   }
   loadData() {
     this.request.loadBlogs()

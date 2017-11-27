@@ -10,19 +10,22 @@ import {AuthenticationService} from '../authentication.service';
 export class BlogShowcaseComponent implements OnInit {
  data: Object;
  currentUser: Object;
+ loginStatus: boolean;
   constructor(private request: BlogPostService,private userReq: AuthenticationService) {
   }
 
 
   ngOnInit() {
     this.request.loadBlogs()
-      .subscribe( data => {
+      .subscribe( res => {
         // console.log(data);
-        this.data = data;
+        this.data = res;
       });
-    // console.log(this.data)
-
+     console.log(this.data)
+     this.loginStatus = this.userReq.isLoggedIn();
+     if(this.loginStatus) {
     this.currentUser=JSON.parse(localStorage.getItem('curUser'));
+     }
   }
   markFavorite(blog: Object ) {
     if (this.currentUser['favourites'].indexOf(blog['id']) === -1) {
