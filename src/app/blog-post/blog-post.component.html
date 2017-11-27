@@ -3,6 +3,7 @@
 <hr style="height: 2px; width: 40vw;float: left">
 
 <div class="row" style="clear: left">
+  <ng-container *ngIf='category!="Favourites"' >
   <ng-container *ngFor="let post of data">
     <div class="col-md-6" *ngIf="post.category==category">
       <!--card-->
@@ -39,4 +40,41 @@
 
     </div>
   </ng-container>
-</div>
+</ng-container>
+
+<ng-container *ngIf='category=="Favourites"'>
+    <ng-container *ngFor="let post of data">
+        <div class="col-md-6" *ngIf="currentUser.favourites.indexOf(post.id) > -1">
+          <!--card-->
+    
+          <div class="card" style="width: 25rem;height: 40rem;">
+            <img class="card-img-top" src={{post.imageUrl}} alt="Card image cap" style="height:15rem">
+            <div class="card-body">
+              <h4 class="card-title">{{post.title}}</h4>
+              <p class="card-text">{{post.desc}}</p>
+            </div>
+    
+            <div class="card-body">
+              <a href="#" class="card-link" [routerLink]="['/user/blog/',post.id]">Read More...</a>
+             
+              
+              <button type="button" class="btn btn-link" style="float: right">
+                  <i class="fa fa-heart" aria-hidden="true" style="color: #F06292"></i>
+              </button>
+              
+    
+              <p class="card-text">
+                <small class="text-muted">{{post.date}}</small>
+              </p>
+              <footer class="blockquote-footer" style="float: right">
+                <small>
+                    By : <cite title="Source Title">{{post.author}}</cite>
+                  </small>
+              </footer>
+            </div>
+          </div>
+    
+        </div>
+      </ng-container>
+</ng-container>
+</div>  

@@ -25,7 +25,7 @@ export class AddBlogComponent implements OnInit {
     this.blogForm = formBuilder.group({
       'title' : [null, Validators.required],
       'desc' : [],
-      'body' : [null, Validators.required],
+      'post' : [null, Validators.required],
       'category': [],
       'imageUrl': [],
       "author":"",
