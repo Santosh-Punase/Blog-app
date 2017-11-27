@@ -9,7 +9,7 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class BlogComponent implements OnInit , OnDestroy{
 
-  data: Object;
+  data;
   id: string;
   private sub: any;
   constructor(private route: ActivatedRoute, private request: BlogPostService) { }
