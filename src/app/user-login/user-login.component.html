@@ -21,6 +21,7 @@
         <div class="form-group row">
           <div class="col-sm-10">
             <button type="submit" class="btn btn-primary">Sign In</button>
+            <span class="mx-4" style="color:red" *ngIf="errorMsg" >Invalid Email or Password </span>
           </div>
         </div>
       </form>

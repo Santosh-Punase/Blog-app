@@ -46,6 +46,7 @@ export class BlogPostComponent implements OnInit, OnDestroy{
         });
     }
   }
+ 
   ngOnDestroy() {
     this.sub.unsubscribe();
   }

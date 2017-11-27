@@ -109,17 +109,6 @@
       "latest": false,
       "date": "August 6 2017",
       "category": "Technology"
-    },
-    {
-      "title": "ashwini ka blog",
-      "desc": "something",
-      "post": "<p>aswini <strong>chutiya</strong> hai</p>",
-      "category": "Technology",
-      "imageUrl": null,
-      "author": "santosh",
-      "date": "Mon Nov 27 2017",
-      "latest": true,
-      "id": 10
     }
   ]
 }
