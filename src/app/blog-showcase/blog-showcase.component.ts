@@ -37,4 +37,13 @@ export class BlogShowcaseComponent implements OnInit {
         });
     }
   }
+  markUnFavorite(blog: Object) {
+    let index = this.currentUser['favourites'].indexOf(blog['id']);
+    this.currentUser['favourites'].splice(index, 1);
+    localStorage.setItem('curUser', JSON.stringify(this.currentUser));
+    this.userReq.updateFavourites(this.currentUser)
+      .subscribe(data => {
+        console.log(data);
+      });
+  }
 }

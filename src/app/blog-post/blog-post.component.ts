@@ -1,14 +1,14 @@
-import {AfterViewInit, Component, OnDestroy, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
-import {BlogPostService} from '../blogpost.service';
-import {AuthenticationService} from '../authentication.service';
+import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { BlogPostService } from '../blogpost.service';
+import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'app-blog-post',
   templateUrl: './blog-post.component.html',
   styleUrls: ['./blog-post.component.css']
 })
-export class BlogPostComponent implements OnInit, OnDestroy{
+export class BlogPostComponent implements OnInit, OnDestroy {
 
   data: Object
   category: string;
@@ -23,20 +23,20 @@ export class BlogPostComponent implements OnInit, OnDestroy{
       this.category = param.get('category');
       console.log(this.category);
       this.loadData();
-    }); 
+    });
     this.loginStatus = this.userReq.isLoggedIn();
-    if(this.loginStatus) {
-   this.currentUser=JSON.parse(localStorage.getItem('curUser'));
+    if (this.loginStatus) {
+      this.currentUser = JSON.parse(localStorage.getItem('curUser'));
     }
   }
   loadData() {
     this.request.loadBlogs()
-      .subscribe( data => {
+      .subscribe(data => {
         this.data = data;
         console.log(this.data);
       });
   }
-  markFavorite(blog: Object ) {
+  markFavorite(blog: Object) {
     if (this.currentUser['favourites'].indexOf(blog['id']) === -1) {
       this.currentUser['favourites'].push(blog['id']);
       localStorage.setItem('curUser', JSON.stringify(this.currentUser));
@@ -46,7 +46,16 @@ export class BlogPostComponent implements OnInit, OnDestroy{
         });
     }
   }
- 
+  markUnFavorite(blog: Object) {
+    let index = this.currentUser['favourites'].indexOf(blog['id']);
+    this.currentUser['favourites'].splice(index, 1);
+    localStorage.setItem('curUser', JSON.stringify(this.currentUser));
+    this.userReq.updateFavourites(this.currentUser)
+      .subscribe(data => {
+        console.log(data);
+      });
+  }
+
   ngOnDestroy() {
     this.sub.unsubscribe();
   }
