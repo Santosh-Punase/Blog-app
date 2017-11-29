@@ -2,8 +2,9 @@ import { Injectable } from '@angular/core';
 import {Http} from '@angular/http';
 import 'rxjs/add/operator/map';
 
-const BASE_URL = 'http://localhost:3000/posts/';
-
+const BASE_URL = 'https://santosh-blogapp.herokuapp.com/posts/';
+// https://santosh-blogapp.herokuapp.com
+// http://localhost:3000
 @Injectable()
 export class BlogPostService {
  // header = {headers: new Headers({'Content-Type': 'application/json'})};

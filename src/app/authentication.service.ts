@@ -2,8 +2,9 @@ import {EventEmitter, Injectable} from '@angular/core';
 import {Http} from '@angular/http';
 import 'rxjs/add/operator/map';
 
-const BASE_URL = 'http://localhost:3000/profiles/';
+const BASE_URL = 'https://santosh-blogapp.herokuapp.com/profiles/';
 // https://santosh-blogapp.herokuapp.com/
+// http://localhost:3000
 @Injectable()
 export class AuthenticationService {
   loginStatus: EventEmitter<boolean> = new EventEmitter();
